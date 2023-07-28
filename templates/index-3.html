@@ -1,0 +1,1335 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/remixicon.css' %}">
+<link rel="stylesheet" href="{% static 'css/flaticon_zigo.css' %}">
+<link rel="stylesheet" href="{% static 'css/swiper.bundle.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/aos.css' %}">
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'css/dark-theme.css' %}">
+<title>Zigo - Physical Therapy Medical Clinic HTML Template</title>
+<link rel="icon" type="image/png" href="{% static 'img/favicon.webp' %}">
+</head>
+<body>
+
+<div class="loader-wrapper">
+<div class="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="navbar-area header-two" id="navbar">
+<div class="container">
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="index-2.html">
+<img class="logo-light" src="{% static 'img/logo.webp' %}" alt="logo">
+<img class="logo-dark" src="{% static 'img/logo-white.webp' %}" alt="logo">
+</a>
+<a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+<span class="burger-menu">
+<span class="top-bar"></span>
+<span class="middle-bar"></span>
+<span class="bottom-bar"></span>
+</span>
+</a>
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link active">
+Home
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="index-2.html" class="nav-link">
+Home Demo One
+</a>
+</li>
+<li class="nav-item">
+<a href="index-3.html" class="nav-link active">
+Home Demo Two
+</a>
+</li>
+<li class="nav-item">
+<a href="index-4.html" class="nav-link">
+Home Demo Three
+</a>
+</li>
+<li class="nav-item">
+<a href="index-5.html" class="nav-link">
+Home Demo Four
+</a>
+</li>
+ <li class="nav-item">
+<a href="index-6.html" class="nav-link">
+Home Demo Five
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Pages
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Shop
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="shop-grid.html" class="nav-link">
+Shop Grid
+</a>
+</li>
+<li class="nav-item">
+<a href="shop-left-sidebar.html" class="nav-link">
+Shop Left Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="shop-right-sidebar.html" class="nav-link">
+Shop Right Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="shop-single.html" class="nav-link">
+Shop Single
+</a>
+</li>
+<li class="nav-item">
+<a href="cart.html" class="nav-link">
+Cart
+</a>
+</li>
+<li class="nav-item">
+<a href="wishlist.html" class="nav-link">
+Wishlist
+</a>
+</li>
+<li class="nav-item">
+<a href="checkout.html" class="nav-link">
+Checkout
+</a>
+</li>
+<li class="nav-item">
+<a href="my-account.html" class="nav-link">
+My Account
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="about.html" class="nav-link">
+About Us
+</a>
+</li>
+<li class="nav-item">
+<a href="team.html" class="nav-link">
+ Team
+</a>
+</li>
+<li class="nav-item">
+<a href="pricing-plan.html" class="nav-link">
+Pricing Plan
+</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">
+Testimonials
+</a>
+</li>
+<li class="nav-item">
+<a href="appointment.html" class="nav-link">
+Book Appointment
+</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">
+FAQ
+</a>
+</li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">
+Privacy Policy
+</a>
+</li>
+<li class="nav-item">
+<a href="terms-conditions.html" class="nav-link">
+Terms & Conditions
+</a>
+</li>
+<li class="nav-item">
+<a href="error-404.html" class="nav-link">
+404 Error Page
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Services
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="services-one.html" class="nav-link">
+Service Style One
+</a>
+</li>
+<li class="nav-item">
+<a href="services-two.html" class="nav-link">
+Service Style Two
+</a>
+</li>
+<li class="nav-item">
+<a href="service-details.html" class="nav-link">
+Service Details
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Projects
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="projects.html" class="nav-link">
+All Projects
+</a>
+</li>
+<li class="nav-item">
+<a href="project-details.html" class="nav-link">
+Project Details
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Blog
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Blog Layout
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-no-sidebar.html" class="nav-link">
+Blog Grid
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-left-sidebar.html" class="nav-link">
+Blog Left Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-right-sidebar.html" class="nav-link">
+Blog Right Sidebar
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="javascript:void(0)" class="dropdown-toggle nav-link">
+Single Blog Layout
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-details-no-sidebar.html" class="nav-link">
+Blog Details Without Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-left-sidebar.html" class="nav-link">
+Blog Details Left Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-right-sidebar.html" class="nav-link">
+Blog Details Right Sidebar
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="contact.html" class="nav-link">
+Contact
+</a>
+</li>
+</ul>
+<div class="others-option d-flex align-items-center">
+<div class="option-item">
+<a href="appointment.html" class="btn-two">Book Appointment</a>
+</div>
+<div class="option-item">
+<a class="sidebar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+<img src="{% static 'img/icons/sidebar-menu.svg' %}" alt="Image">
+</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+
+
+<div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+<div class="offcanvas-header">
+<a href="index-2.html" class="logo d-inline-block">
+<img class="logo-light" src="{% static 'img/logo.webp' %}" alt="logo">
+<img class="logo-dark" src="{% static 'img/logo-white.webp' %}" alt="logo">
+</a>
+<button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="accordion" id="navbarAccordion">
+<div class="accordion-item">
+<button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+Home
+</button>
+<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion2">
+<div class="accordion-item">
+<a class="accordion-link " href="index-2.html">
+Home Demo One
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link active" href="index-3.html">
+Home Demo Two
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="index-4.html">
+Home Demo Three
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="index-5.html">
+Home Demo Four
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="index-6.html">
+Home Demo Five
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapZigour" aria-expanded="false" aria-controls="collapZigour">
+Pages
+</button>
+<div id="collapZigour" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion45">
+<div class="accordion-item">
+ <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne20" aria-expanded="false" aria-controls="collapseOne20">
+Shop
+</button>
+<div id="collapseOne20" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion45">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion46">
+<div class="accordion-item">
+<a class="accordion-link" href="shop-grid.html">
+Shop Grid
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="shop-left-sidebar.html">
+Shop Left Sidebar
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="shop-right-sidebar.html">
+Shop Right Sidebar
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="shop-single.html">
+Shop Details
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="cart.html">
+Cart
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="wishlist.html">
+Wishlist
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="checkout.html">
+Checkout
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="my-account.html">
+My Account
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="about.html">
+About Us
+</a>
+ </div>
+<div class="accordion-item">
+<a href="team.html" class="accordion-link">
+Team
+</a>
+</div>
+<div class="accordion-item">
+<a href="pricing-plan.html" class="accordion-link">
+Pricing Plan
+</a>
+</div>
+<div class="accordion-item">
+<a href="testimonials.html" class="accordion-link">
+Testimonials
+</a>
+</div>
+<div class="accordion-item">
+<a href="faq.html" class="accordion-link">
+FAQ
+</a>
+</div>
+<div class="accordion-item">
+<a href="appointment.html" class="accordion-link">
+Book Appointment
+</a>
+</div>
+<div class="accordion-item">
+<a href="privacy-policy.html" class="accordion-link">
+Privacy Policy
+</a>
+</div>
+<div class="accordion-item">
+<a href="terms-conditions.html" class="accordion-link">
+Terms & Conditions
+</a>
+</div>
+<div class="accordion-item">
+<a href="error-404.html" class="accordion-link">
+404 Error Page
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+Services
+</button>
+<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion7">
+<div class="accordion-item">
+<a href="services-one.html" class="accordion-link">
+Service Style One
+</a>
+</div>
+<div class="accordion-item">
+<a href="services-two.html" class="accordion-link">
+Service Style Two
+</a>
+</div>
+<div class="accordion-item">
+<a href="service-details.html" class="accordion-link">
+Service Details
+</a>
+</div>
+</div>
+ </div>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+Projects
+</button>
+<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion30">
+<div class="accordion-item">
+<a href="projects.html" class="accordion-link">
+Projects
+</a>
+</div>
+<div class="accordion-item">
+<a href="project-details.html" class="accordion-link">
+Project Details
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+Blog
+</button>
+<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion5">
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+Blog Layout
+</button>
+<div id="collapseOne2" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion3">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion3">
+<div class="accordion-item">
+<a class="accordion-link" href="blog-no-sidebar.html">
+Blog Grid
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="blog-left-sidebar.html">
+Blog Left Sidebar
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="blog-right-sidebar.html">
+Blog Right Sidebar
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+Single Blog Layout
+</button>
+<div id="collapseOne3" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion4">
+<div class="accordion-body">
+<div class="accordion" id="navbarAccordion4">
+<div class="accordion-item">
+<a class="accordion-link" href="blog-details-no-sidebar.html">
+Blog Details Without Sidebar
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="blog-details-left-sidebar.html">
+Blog Details Left Sidebar
+</a>
+</div>
+<div class="accordion-item">
+<a class="accordion-link" href="blog-details-right-sidebar.html">
+Blog Details Right Sidebar
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<a class="accordion-button without-icon" href="contact.html">
+Contact
+</a>
+</div>
+</div>
+<div class="offcanvas-contact-info">
+<h4>Contact Info</h4>
+<ul class="contact-info list-style">
+<li>
+<i class="ri-map-pin-fill"></i>
+<p>28/A Street, New York, USA</p>
+</li>
+<li>
+<i class="ri-mail-fill"></i>
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#1179747d7d7e516b78767e3f727e7c"><span class="__cf_email__" data-cfemail="3c54595050537c46555b53125f5351">[email&#160;protected]</span></a>
+</li>
+<li>
+<i class="ri-phone-fill"></i>
+<a href="tel:1800123456789">+1 800 123 456 789</a>
+</li>
+</ul>
+<ul class="social-profile list-style">
+<li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+<li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+<li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+<li><a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+</ul>
+</div>
+<div class="others-option d-flex d-lg-none align-items-center">
+<div class="option-item">
+<a href="appointment.html" class="btn-two">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="hero-wrap hero-two">
+<img src="{% static 'img/hero/hero-shape-3.webp' %}" alt="Image" class="hero-shape-one moveHorizontal md-none">
+<img src="{% static 'img/hero/hero-shape-4.webp' %}" alt="Image" class="hero-shape-two moveHorizontal md-none">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6">
+<div class="hero-content">
+<span data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Zigo Is The Best Physical Therapy Clinic </span>
+<h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">The Best Therapy And Injuries Treatment <img src="{% static 'img/hero/hero-thumb.webp' %}" alt="Image"></h1>
+<div class="client-likes" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<ul class="list-style">
+<li><img src="{% static 'img/clients/client-3.webp' %}" alt="Image"></li>
+<li><img src="{% static 'img/clients/client-4.webp' %}" alt="Image"></li>
+<li><img src="{% static 'img/clients/client-2.webp' %}" alt="Image"></li>
+<li><img src="{% static 'img/clients/client-1.webp' %}" alt="Image"></li>
+</ul>
+<h6>Join Our 140k+ Talented <br> Therapist</h6>
+</div>
+<a href="services-one.html" class="btn-one" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">Our Services</a>
+<div class="hero-doc-card" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+<div class="row">
+<div class="col-md-7">
+<div class="doc-img">
+<img src="{% static 'img/hero/doc-thumb.webp' %}" alt="Image">
+<span class="online-status"></span>
+</div>
+<div class="doc-info">
+<h3>Dr. Stephan Hickman</h3>
+<span>Therapist Specialist</span>
+</div>
+</div>
+<div class="col-md-5 text-md-end">
+<a href="contact.html" class="btn-three">Get Online Help</a>
+<div class="ratings">
+<ul class="rating list-style">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<span>(50+ Reviews)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="hero-img-wrap">
+<img src="{% static 'img/hero/hero-img-1.webp' %}" alt="Image">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="move-text-one pb-70">
+<ul class="list-style">
+<li>100+ New Clients Every Month</li>
+<li>15+ Successful Years</li>
+ <li>10+ Clinics Around The Nation</li>
+<li>30+ Friendly Staff</li>
+</ul>
+</div>
+
+
+<div class="service-wrap-two pt-100 pb-75">
+<img src="{% static 'img/services/service-shape-1.webp' %}" alt="Image" class="service-shape-one md-none animationFramesTwo">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<div class="section-title-one text-center mb-30">
+<span>Why Choose Us</span>
+<h2>We Offer Various Physio Disciplines</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="service-card-two">
+<span class="service-icon">
+<i class="flaticon-electricity-therapy"></i>
+</span>
+<div class="service-info">
+<h3><a href="service-details.html">Electrical Stimulation And TENS</a></h3>
+<a href="service-details.html" class="link-two">Read More</a>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+<div class="service-card-two">
+<span class="service-icon">
+<i class="flaticon-laser"></i>
+</span>
+<div class="service-info">
+<h3><a href="service-details.html">Laser Or Light Stimulate Therapy</a></h3>
+<a href="service-details.html" class="link-two">Read More</a>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="service-card-two">
+<span class="service-icon">
+<i class="flaticon-resistance-band"></i>
+</span>
+<div class="service-info">
+<h3><a href="service-details.html">Geriatric Physical Therapy</a></h3>
+<a href="service-details.html" class="link-two">Read More</a>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+<div class="service-card-two">
+<span class="service-icon">
+<i class="flaticon-brain"></i>
+</span>
+<div class="service-info">
+<h3><a href="service-details.html">Neurological Physical Therapy</a></h3>
+<a href="service-details.html" class="link-two">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="about-wrap-two pb-100">
+<img src="{% static 'img/about/about-shape-4.webp' %}" alt="Image" class="about-shape-one md-none">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+<div class="about-img-wrap">
+<div class="about-img">
+<img src="{% static 'img/about/about-img-2.webp' %}" alt="Image">
+</div>
+<div class="about-img">
+<img src="{% static 'img/about/about-shape-3.webp' %}" alt="Image" class="about-img-shape">
+<img src="{% static 'img/about/about-img-3.webp' %}" alt="Image">
+</div>
+<div class="circle-text">
+<span>25</span>
+<svg class="rotate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<defs>
+<path id="circlePath_eight" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+</defs>
+<circle cx="150" cy="150" r="75" fill="none" />
+<g>
+<use xlink:href="#circlePath_eight" fill="none" />
+<text fill="#0C0078">
+<textPath xlink:href="#circlePath_eight">Year Of Experience Years Of Experience</textPath>
+</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+<div class="about-content">
+<div class="content-title-one">
+<span>About Clinic</span>
+<h2>Welcome To Physio Therapy & Chiropractor Clinic</h2>
+<p>Making this the first true generator on the Internet. It uses a dictiony of atim over 200 Latin words, combined this the first</p>
+</div>
+<ul class="features-list list-style">
+<li><span>01</span> Personalized Treatment</li>
+<li><span>02</span> Practitioners Network</li>
+</ul>
+<a href="about.html" class="btn-one">Discover More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="appointment-wrap-two ptb-100">
+<div class="appointment-bg-one bg-f"></div>
+<div class="container">
+<div class="row gx-5">
+<div class="col-lg-6">
+<form action="#" class="appointment-form-one">
+<h3>Fill The Form</h3>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" placeholder="Name">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" placeholder="Email">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" placeholder="Phone">
+</div>
+ </div>
+<div class="col-md-6">
+<div class="form-group">
+<select>
+<option value="0" data-display="Your Gender">Your Gender</option>
+<option value="1">Male</option>
+<option value="2">FeMale</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="date">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<select>
+<option value="0" data-display="Your Gender">Department</option>
+<option value="1">Phsiotherapy</option>
+<option value="2">Physical Health</option>
+</select>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+</div>
+<button type="submit" class="btn-one">Make Appointment</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="video-bg-three bg-f">
+<a class="play-now" href="#quickview-modal" data-bs-toggle="modal">
+<i class="ri-play-fill"></i>
+<span class="ripple"></span>
+</a>
+</div>
+</div>
+
+
+<div class="process-wrap ptb-100">
+<img src="{% static 'img/about/shape-1.webp' %}" alt="Image" class="process-shape-one animationFramesTwo md-none" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="800">
+<img src="{% static 'img/about/about-shape-1.webp' %}" alt="Image" class="process-shape-two moveHorizontal md-none" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="800">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<div class="section-title-one text-center mb-30">
+<span>Work Process</span>
+<h2>How It Works In The Zigo Physiotherapy</h2>
+</div>
+</div>
+</div>
+<div class="process-card-wrap">
+<img src="{% static 'img/about/circle-1.webp' %}" alt="Image" class="process-line-one md-none">
+<img src="{% static 'img/about/circle-2.webp' %}" alt="Image" class="process-line-two md-none">
+<div class="process-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+<div class="process-counter">01</div>
+<h3><span>01.</span>Book A Counseling Plan For Therapy</h3>
+<p>It uses a dictionary of over 200 Latin words, combin with a handful is of latin model ence combin with</p>
+</div>
+<div class="process-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+<div class="process-counter">02</div>
+<h3><span>02.</span>Choose A Counselor & Pick A Time Physiology</h3>
+<p>It uses a dictionary of over 200 Latin words, combin with a handful is of latin model ence combin with</p>
+</div>
+<div class="process-card" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">
+<div class="process-counter">03</div>
+<h3><span>03.</span>Join The Session And Chat Afterward</h3>
+<p>It uses a dictionary of over 200 Latin words, combin with a handful is of latin model ence combin with</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="help-wrap-two ptb-100 bg_gray">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="help-content">
+<div class="content-title-one">
+<span>We Can Help Your</span>
+<h2>We Take Pride In Providing Quality Treatment</h2>
+<p>Making this the first true generator on the Internet. It uses a dictiony of atim over 200 Latin words, combined this the first true</p>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="help-card">
+<span>01</span>
+<h3>Personalized Treatment</h3>
+<p>Many desktop publishing packages and web page</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="help-card">
+<span>02</span>
+<h3>Emergency Service</h3>
+<p>Many desktop publishing packages and web page</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="help-img-wrap">
+<div class="help-img">
+<img src="{% static 'img/about/help-img-1.webp' %}" alt="Image">
+<img src="{% static 'img/about/help-shape.webp' %}" alt="Image" class="help-img-shape md-none">
+</div>
+<div class="help-img">
+<img src="{% static 'img/about/help-img-2.webp' %}" alt="Image">
+<div class="help-promo-text">
+Zigo is trust by morethen <span>9800</span> healthy patients
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container ptb-100">
+<div class="row">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<div class="section-title-one text-center mb-30">
+<span>Recent Projects</span>
+<h2>Our Best Physiotherapy Patient Work</h2>
+</div>
+</div>
+</div>
+<div class="project-slider-one swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="project-card">
+ <img src="{% static 'img/projects/project-1.webp' %}" alt="Image">
+<div class="project-info">
+<a href="projects.html" class="project-cat">Neurological </a>
+<h3><a href="project-details.html">Gotham Physical Therapy.</a></h3>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="project-card">
+<img src="{% static 'img/projects/project-2.webp' %}" alt="Image">
+<div class="project-info">
+<a href="projects.html" class="project-cat">Psychodynamic </a>
+<h3><a href="project-details.html">Obsessive Compulsive Disorder</a></h3>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="project-card">
+<img src="{% static 'img/projects/project-3.webp' %}" alt="Image">
+<div class="project-info">
+<a href="projects.html" class="project-cat">Neurological </a>
+<h3><a href="project-details.html">Lyttle Fox Therapy</a></h3>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="project-card">
+<img src="{% static 'img/projects/project-4.webp' %}" alt="Image">
+<div class="project-info">
+<a href="projects.html" class="project-cat">Psychodynamic </a>
+<h3><a href="project-details.html">Rose Physical Therapy</a></h3>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="project-card">
+<img src="{% static 'img/projects/project-5.webp' %}" alt="Image">
+<div class="project-info">
+<a href="projects.html" class="project-cat">Neurological </a>
+<h3><a href="project-details.html">Pediatric Physical Therapy</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="project-pagination"></div>
+</div>
+</div>
+
+
+<div class="testimonial-wrap-two bg-f ptb-100">
+<div class="container">
+<div class="swiper testimonial-slider-two">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="testimonial-card-two">
+<img src="{% static 'img/icons/quote-icon-5.svg' %}" alt="Image" class="quote-icon">
+<div class="row">
+<div class="col-xl-10 offset-xl-1">
+<ul class="rating list-style">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p class="client-quote">“If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedhe first true generaton the Internet. It uses a dictionary of over 200 Latin words, combined with a handful”</p>
+<div class="client-info">
+<h4>Sheldon Hinton</h4>
+<span>Web Developer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="testimonial-card-two">
+<img src="{% static 'img/icons/quote-icon-5.svg' %}" alt="Image" class="quote-icon">
+<div class="row">
+<div class="col-xl-10 offset-xl-1">
+<ul class="rating list-style">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p class="client-quote">“If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedhe first true generaton the Internet. It uses a dictionary of over 200 Latin words, combined with a handful”</p>
+<div class="client-info">
+<h4>Mark Henry</h4>
+<span>Physician</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="testimonial-card-two">
+<img src="{% static 'img/icons/quote-icon-5.svg' %}" alt="Image" class="quote-icon">
+<div class="row">
+<div class="col-xl-10 offset-xl-1">
+<ul class="rating list-style">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p class="client-quote">“If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedhe first true generaton the Internet. It uses a dictionary of over 200 Latin words, combined with a handful”</p>
+<div class="client-info">
+<h4>Luis Archer</h4>
+<span>Teacher</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="testimonial-card-two">
+<img src="{% static 'img/icons/quote-icon-5.svg' %}" alt="Image" class="quote-icon">
+<div class="row">
+ <div class="col-xl-10 offset-xl-1">
+<ul class="rating list-style">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p class="client-quote">“If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefinedhe first true generaton the Internet. It uses a dictionary of over 200 Latin words, combined with a handful”</p>
+<div class="client-info">
+<h4>Nicolas Cage</h4>
+<span>Actor & Model</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="testimonial-btn">
+<div class="testimonial-button-prev"><img src="{% static 'img/icons/left-arrow.svg' %}" alt="Image"></div>
+<div class="testimonial-button-next"><img src="{% static 'img/icons/right-arrow.svg' %}" alt="Image"></div>
+</div>
+</div>
+
+
+<div class="bg_ash pt-100 pb-75">
+<div class="container">
+<div class="row align-items-end mb-30">
+<div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8">
+<div class="section-title-one">
+<span>Our Blog</span>
+<h2>Upgrade Your Knowledge With Our Blog Post & Content</h2>
+</div>
+</div>
+<div class="col-xxl-7 col-xl-6 col-lg-5 col-md-4 text-md-end sm-none">
+<a href="blog-left-sidebar.html" class="btn-one">View All Blog Post</a>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="blog-card-two">
+<div class="blog-card-img">
+<img src="{% static 'img/blog/blog-1.webp' %}" alt="Image">
+<a href="posts-by-date.html" class="blog-date"><span>25</span>Mar</a>
+</div>
+<div class="blog-card-info">
+<ul class="blog-metainfo list-style">
+<li><i class="ri-user-3-line"></i><a href="posts-by-date.html">By Admin</a></li>
+<li><i class="ri-chat-3-line"></i>No Comment</li>
+</ul>
+<h3><a href="blog-details-left-sidebar.html">Identifying And Treating Pain From Nerve Tension</a></h3>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+<div class="blog-card-two">
+<div class="blog-card-img">
+<img src="{% static 'img/blog/blog-2.webp' %}" alt="Image">
+<a href="posts-by-date.html" class="blog-date"><span>22</span>Mar</a>
+</div>
+<div class="blog-card-info">
+<ul class="blog-metainfo list-style">
+<li><i class="ri-user-3-line"></i><a href="posts-by-date.html">By Admin</a></li>
+<li><i class="ri-chat-3-line"></i>3 Comments</li>
+</ul>
+<h3><a href="blog-details-left-sidebar.html">Therapy Found Effective For Carpal Syndrome</a></h3>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="blog-card-two">
+<div class="blog-card-img">
+<img src="{% static 'img/blog/blog-3.webp' %}" alt="Image">
+<a href="posts-by-date.html" class="blog-date"><span>10</span>Mar</a>
+</div>
+<div class="blog-card-info">
+<ul class="blog-metainfo list-style">
+<li><i class="ri-user-3-line"></i><a href="posts-by-date.html">By Admin</a></li>
+<li><i class="ri-chat-3-line"></i>1 Comment</li>
+</ul>
+<h3><a href="blog-details-left-sidebar.html">How Physiotherapists Help Sports Energy Recovery</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center d-md-none">
+<a href="blog-left-sidebar.html" class="btn-one">View All Blog Post</a>
+</div>
+</div>
+</div>
+
+
+<div class="container ptb-100">
+<h4 class="text-center mb-30">Trusted By International Company</h4>
+<div class="partner-slider swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-1.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-2.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-3.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-4.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-5.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-6.webp' %}" alt="Image">
+</div>
+<div class="swiper-slide partner-logo">
+<img src="{% static 'img/partner/partner-7.webp' %}" alt="Image">
+</div>
+</div>
+</div>
+</div>
+
+
+<footer class="footer-wrap">
+<div class="footer-top">
+<img src="{% static 'img/footer-shape-1.webp' %}" alt="Image" class="footer-shape-one md-none">
+<img src="{% static 'img/footer-shape-2.webp' %}" alt="Image" class="footer-shape-two md-none">
+<div class="container">
+<div class="row pt-100 pb-75">
+<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+<div class="footer-widget">
+<a href="index-2.html" class="footer-logo">
+<img class="logo-light" src="{% static 'img/logo-white.webp' %}" alt="Image">
+<img class="logo-dark" src="{% static 'img/logo-white.webp' %}" alt="Image">
+</a>
+<p class="comp-desc">There are many variations of passages of
+Lorem Ipsum available, but majority suffered alteration in some form, by injected humour, orandomised words which don't look</p>
+<ul class="social-profile list-style">
+<li>
+<a href="https://facebook.com/" target="_blank">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/" target="_blank">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a href="https://linkedin.com/" target="_blank">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+<li>
+<a href="https://instagram.com/" target="_blank">
+<i class="ri-instagram-fill"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Quick Links</h3>
+<ul class="footer-menu list-style">
+<li>
+<a href="about.html">
+About Us
+</a>
+</li>
+<li>
+<a href="contact.html">
+Contact Us
+</a>
+</li>
+<li>
+<a href="privacy-policy.html">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="terms-conditions.html">
+Terms & Conditions
+</a>
+</li>
+<li>
+<a href="team.html">
+Our Team
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-2 col-lg-2 col-md-6 col-sm-6 ps-xl-4">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Services</h3>
+<ul class="footer-menu list-style">
+<li>
+<a href="services-one.html">Physiotherapy</a>
+</li>
+<li>
+<a href="services-one.html">Diagnostics</a>
+</li>
+<li>
+<a href="services-one.html">Manual Therapy</a>
+</li>
+<li>
+<a href="services-one.html">Massage Therapy</a>
+</li>
+<li>
+<a href="services-one.html">Rehabilitation</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-xl-5">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Contact Info</h3>
+<ul class="contact-info list-style">
+<li>
+<span>
+<i class="ri-phone-fill"></i>
+</span>
+<a href="tel:8002162020">(800) 216 2020</a>
+</li>
+<li>
+<span>
+<i class="ri-mail-fill"></i>
+</span>
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#731b161f1f1c33091a141c5d101c1e"><span class="__cf_email__" data-cfemail="dab2bfb6b6b59aa0b3bdb5f4b9b5b7">[email&#160;protected]</span></a>
+</li>
+<li>
+<span>
+<i class="ri-map-pin-2-fill"></i>
+</span>
+<p>No. 12, Ribon Building, Walse street, Australia</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="copyright-text"><i class="ri-copyright-line"></i><span>Zigo</span> is proudly owned by <a href="https://hibootstrap.com/">HiBootstrap</a></p>
+</footer>
+
+
+<button type="button" id="backtotop" class="position-fixed text-center border-0 p-0">
+<i class="ri-arrow-up-line"></i>
+</button>
+
+<div class="modal fade" id="quickview-modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quickview-modal" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+<div class="modal-content">
+<button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+<i class="ri-close-line"></i>
+</button>
+<div class="modal-body">
+<div class="video-popup">
+<iframe width="885" height="498" src="https://www.youtube.com/embed/3FjT7etqxt8" title="How to Design an Elvis Movie Poster in Photoshop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script data-cfasync="false" src="https://templates.hibootstrap.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/swiper.bundle.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zigo/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 18:04:53 GMT -->
+</html>

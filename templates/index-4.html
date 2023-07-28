@@ -1,0 +1,941 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+  <!-- Mirrored from templates.hibootstrap.com/zigo/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 18:04:53 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/remixicon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon_zigo.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper.bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/dark-theme.css' %}" />
+    <title>Fit n GO - Physio</title>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.webp' %}" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="switch-theme-mode">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    {% include 'imports/header.html' %}
+
+    <div class="hero-wrap hero-three">
+      <img
+        src="{% static 'img/hero/hero-shape-5.svg' %}"
+        alt="Image"
+        class="hero-shape-one bounce md-none"
+      />
+      <img
+        src="{% static 'img/hero/hero-shape-6.webp' %}"
+        alt="Image"
+        class="hero-shape-two md-none"
+      />
+      <img
+        src="{% static 'img/hero/hero-shape-7.webp' %}"
+        alt="Image"
+        class="hero-shape-three md-none"
+      />
+      <img
+        src="{% static 'img/hero/hero-bg-shape.webp' %}"
+        alt="Image"
+        class="hero-bg-shape md-none"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="200"
+                >Expert Support And Guidance For Your Healing Journey</span
+              >
+              <h1
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="400"
+              >
+                We Take In Providing Quality Treatment
+              </h1>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-promo-wrap">
+              <div class="circle-text">
+                <img src="{% static 'img/icons/arrow.svg' %}" alt="Image" />
+                <svg
+                  class="rotate"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 300 300"
+                  enable-background="new 0 0 300 300"
+                  xml:space="preserve"
+                >
+                  <defs>
+                    <path
+                      id="circlePath_nine"
+                      d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                    />
+                  </defs>
+                  <circle cx="150" cy="150" r="75" fill="none" />
+                  <g>
+                    <use xlink:href="#circlePath_nine" fill="none" />
+                    <text fill="#95849D">
+                      <textPath xlink:href="#circlePath_nine">
+                        Our Full Service View
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-gallery-wrap pb-100">
+      <div class="container">
+        <div class="hero-gallery-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-1.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-2.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-3.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-4.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-5.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-6.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-img-slide">
+                <img
+                  src="{% static 'img/hero/hero-gallery-7.webp' %}"
+                  alt="Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-wrap-three pb-75">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div class="service-card-three">
+              <span class="service-icon">
+                <i class="flaticon-electricity-therapy"></i>
+              </span>
+              <div class="service-info">
+                <h3>
+                  <a href="service-details.html"
+                    >Electrical Stimulation And TENS</a
+                  >
+                </h3>
+                <a href="service-details.html" class="link-two">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <div class="service-card-three">
+              <span class="service-icon">
+                <i class="flaticon-laser"></i>
+              </span>
+              <div class="service-info">
+                <h3>
+                  <a href="service-details.html"
+                    >Laser Or Light Stimulate Therapy</a
+                  >
+                </h3>
+                <a href="service-details.html" class="link-two">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
+            <div class="service-card-three">
+              <span class="service-icon">
+                <i class="flaticon-resistance-band"></i>
+              </span>
+              <div class="service-info">
+                <h3>
+                  <a href="service-details.html">Geriatric Physical Therapy</a>
+                </h3>
+                <a href="service-details.html" class="link-two">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="800"
+          >
+            <div class="service-card-three">
+              <span class="service-icon">
+                <i class="flaticon-brain"></i>
+              </span>
+              <div class="service-info">
+                <h3>
+                  <a href="service-details.html"
+                    >Neurological Physical Therapy</a
+                  >
+                </h3>
+                <a href="service-details.html" class="link-two">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="move-text-two">
+      <ul class="list-style">
+        <li>100+ New Clients Every Month</li>
+        <li>15+ Successful Years</li>
+        <li>10+ Clinics Around The Nation</li>
+        <li>30+ Friendly Staff</li>
+      </ul>
+    </div>
+
+    <div class="about-wrap-three ptb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-img-wrap">
+              <div class="about-img">
+                <img
+                  src="{% static 'img/about/about-img-4.webp' %}"
+                  alt="Image"
+                />
+              </div>
+              <div class="about-img">
+                <img
+                  src="{% static 'img/about/about-img-6.webp' %}"
+                  alt="Image"
+                />
+              </div>
+              <div class="circle-text">
+                <span>25</span>
+                <svg
+                  class="rotate"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 300 300"
+                  enable-background="new 0 0 300 300"
+                  xml:space="preserve"
+                >
+                  <defs>
+                    <path
+                      id="circlePath_ten"
+                      d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                    />
+                  </defs>
+                  <circle cx="150" cy="150" r="75" fill="none" />
+                  <g>
+                    <use xlink:href="#circlePath_ten" fill="none" />
+                    <text fill="#0C0078">
+                      <textPath xlink:href="#circlePath_ten">
+                        Year Of Experience Years Of Experience
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="content-title-one">
+                <span>About Clinic</span>
+                <h2>We’re Offering Whole Range of Treatments For You</h2>
+                <p>
+                  Making this the first true generator on the Internet. It uses
+                  a dictiony of atim over 200 Latin words, combined this the
+                  first true
+                </p>
+              </div>
+              <div class="counter-wrap">
+                <div class="counter-card">
+                  <h2><span class="counter">12</span>+</h2>
+                  <p>Years Of Experience</p>
+                </div>
+                <div class="counter-card">
+                  <h2><span class="counter">4137</span></h2>
+                  <p>Happy Patients</p>
+                </div>
+                <div class="counter-card">
+                  <h2><span class="counter">37</span></h2>
+                  <p>Certification</p>
+                </div>
+              </div>
+              <a href="about.html" class="btn-one">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-bg-two bg-f">
+      <a class="play-now" href="#quickview-modal" data-bs-toggle="modal">
+        Play
+        <span class="ripple"></span>
+      </a>
+    </div>
+
+    <div class="wh-wrap-three ptb-100">
+      <img
+        src="{% static 'img/about/wh-shape-3.webp' %}"
+        alt="Image"
+        class="wh-shape-one md-none"
+      />
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+          <div
+            class="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div class="wh-content">
+              <div class="content-title-one">
+                <span>Why Choose Us</span>
+                <h2>A Therapeutic Approach To Healing And Growth</h2>
+                <p>
+                  It uses a dictionary of over 200 Latin words, combined with a
+                  handful of model entence structures, to generate Lorem Ipsum
+                  which looks reasonable. The generat Lorem Ipsum is therefore
+                  always free from repetition, injected humour.
+                </p>
+              </div>
+              <div class="wh-card-wrap">
+                <div class="wh-card">
+                  <div class="wh-icon">
+                    <i class="flaticon-gene-therapy"></i>
+                  </div>
+                  <h6>Therapy Goals</h6>
+                </div>
+                <div class="wh-card">
+                  <div class="wh-icon"><i class="flaticon-doctors"></i></div>
+                  <h6>Experience Staff</h6>
+                </div>
+                <div class="wh-card">
+                  <div class="wh-icon"><i class="flaticon-treatment"></i></div>
+                  <h6>Personalized Treatment</h6>
+                </div>
+                <div class="wh-card">
+                  <div class="wh-icon"><i class="flaticon-hospital"></i></div>
+                  <h6>Comfortable Clinic</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div class="wh-img-wrap">
+              <img
+                src="{% static 'img/about/wh-shape-4.webp' %}"
+                alt="Image"
+                class="wh-img-shape md-none"
+              />
+              <div class="wh-img">
+                <img src="{% static 'img/about/wh-img-1.webp' %}" alt="Image" />
+              </div>
+              <div class="wh-img">
+                <img src="{% static 'img/about/wh-img-2.webp' %}" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-wrap pt-100 pb-75 bg_two">
+      <img
+        src="{% static 'img/team/team-shape-1.webp' %}"
+        alt="Image"
+        class="team-shape-one md-none"
+      />
+      <img
+        src="{% static 'img/team/team-shape-2.webp' %}"
+        alt="Image"
+        class="team-shape-two md-none"
+      />
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1"
+          >
+            <div class="section-title-one text-center mb-30">
+              <span>Our Team</span>
+              <h2 class="text-white">
+                Physiotherapy Services From Professionals Therapists
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div class="team-card-two">
+              <div class="team-img">
+                <img src="{% static 'img/team/team-1.webp' %}" alt="Image" />
+              </div>
+              <h3>Buford Fitzgerald</h3>
+              <span>Director</span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <div class="team-card-two">
+              <div class="team-img">
+                <img src="{% static 'img/team/team-2.webp' %}" alt="Image" />
+              </div>
+              <h3>Gregory Harrison</h3>
+              <span>Senior Therapist</span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <div class="team-card-two">
+              <div class="team-img">
+                <img src="{% static 'img/team/team-3.webp' %}" alt="Image" />
+              </div>
+              <h3>Linwood Crane</h3>
+              <span>Chief Physician</span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <div class="team-card-two">
+              <div class="team-img">
+                <img src="{% static 'img/team/team-4.webp' %}" alt="Image" />
+              </div>
+              <h3>Keven Freeman</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-wrap-three">
+      <div class="container ptb-100">
+        <div class="testimonial-slider-two swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card-three">
+                <img
+                  src="{% static 'img/icons/quote-icon-5.svg' %}"
+                  alt="Image"
+                  class="quote-icon"
+                />
+                <div class="row align-items-center gx-5">
+                  <div class="col-xl-3 col-lg-4 col-md-4">
+                    <div class="client-img">
+                      <img
+                        src="{% static 'img/clients/client-10.webp' %}"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-8 col-md-8">
+                    <ul class="rating list-style">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                    </ul>
+                    <p class="client-quote">
+                      “If you are going to use a passage of Lorem Ipsum, you
+                      need to be sure there isn't anything embarrassing hidden
+                      in the middle of text. All the Lorem Ipsum generators on
+                      the Internet tend to repeat predefinedhe first Internet.
+                      It uses a dictionary of over 200 Latin words,
+                    </p>
+                    <div class="client-info">
+                      <h5>Sheldon Hinton</h5>
+                      <span>Developer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card-three">
+                <img
+                  src="{% static 'img/icons/quote-icon-5.svg' %}"
+                  alt="Image"
+                  class="quote-icon"
+                />
+                <div class="row align-items-center gx-5">
+                  <div class="col-xl-3 col-lg-4 col-md-4">
+                    <div class="client-img">
+                      <img
+                        src="{% static 'img/clients/client-11.webp' %}"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-8 col-md-8">
+                    <ul class="rating list-style">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                    </ul>
+                    <p class="client-quote">
+                      “If you are going to use a passage of Lorem Ipsum, you
+                      need to be sure there isn't anything embarrassing hidden
+                      in the middle of text. All the Lorem Ipsum generators on
+                      the Internet tend to repeat predefinedhe first Internet.
+                      It uses a dictionary of over 200 Latin words,
+                    </p>
+                    <div class="client-info">
+                      <h5>Mark Towen</h5>
+                      <span>Entrepreneur</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card-three">
+                <img
+                  src="{% static 'img/icons/quote-icon-5.svg' %}"
+                  alt="Image"
+                  class="quote-icon"
+                />
+                <div class="row align-items-center gx-5">
+                  <div class="col-xl-3 col-lg-4 col-md-4">
+                    <div class="client-img">
+                      <img
+                        src="{% static 'img/clients/client-12.webp' %}"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-8 col-md-8">
+                    <ul class="rating list-style">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                    </ul>
+                    <p class="client-quote">
+                      “If you are going to use a passage of Lorem Ipsum, you
+                      need to be sure there isn't anything embarrassing hidden
+                      in the middle of text. All the Lorem Ipsum generators on
+                      the Internet tend to repeat predefinedhe first Internet.
+                      It uses a dictionary of over 200 Latin words,
+                    </p>
+                    <div class="client-info">
+                      <h5>Steve Austin</h5>
+                      <span>Doctor</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-btn">
+        <div class="testimonial-button-prev">
+          <img src="{% static 'img/icons/left-arrow.svg' %}" alt="Image" />
+        </div>
+        <div class="testimonial-button-next">
+          <img src="{% static 'img/icons/right-arrow.svg' %}" alt="Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="help-wrap bg-f">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-6 col-lg-7 offset-lg-5">
+            <div class="help-content pt-100 pb-75">
+              <div
+                class="content-title-one"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="200"
+              >
+                <span>Help Center</span>
+                <h2>
+                  Contact Us For Any Physical Therapy Information Or Needs
+                </h2>
+                <p>
+                  It uses a dictionary of over 200 Latin words, combined with a
+                  handful of model entence structures, to generate Lorem Ipsum
+                  which looks reasonable. The generat Lorem Ipsum is therefore
+                  always free from repetition humour.
+                </p>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
+                >
+                  <div class="help-card">
+                    <div class="help-card-title">
+                      <span><i class="flaticon-online-chat"></i></span>
+                      <h3>Ticket Support</h3>
+                    </div>
+                    <p>
+                      All the Lorem Ipsum generators on the Internet tend to
+                      rped efied
+                    </p>
+                    <a href="contact.html" class="link-one">Send Ticket</a>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="400"
+                >
+                  <div class="help-card">
+                    <div class="help-card-title">
+                      <span><i class="flaticon-phone"></i></span>
+                      <h3>Call Center</h3>
+                    </div>
+                    <p>
+                      All the Lorem Ipsum generators on the Internet tend to
+                      rped efied
+                    </p>
+                    <a href="contact.html" class="link-one">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-100 pb-75">
+      <div class="row align-items-end mb-30">
+        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8">
+          <div class="section-title-one">
+            <span>Our Blog</span>
+            <h2>Upgrade Your Knowledge With Our Blog Post & Content</h2>
+          </div>
+        </div>
+        <div class="col-xxl-7 col-xl-6 col-lg-5 col-md-4 text-md-end sm-none">
+          <a href="blog-left-sidebar.html" class="btn-one"
+            >View All Blog Post</a
+          >
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div
+          class="col-xl-4 col-lg-6 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="200"
+        >
+          <div class="blog-card-two">
+            <div class="blog-card-img">
+              <img src="{% static 'img/blog/blog-1.webp' %}" alt="Image" />
+              <a href="posts-by-date.html" class="blog-date"
+                ><span>25</span>Mar</a
+              >
+            </div>
+            <div class="blog-card-info">
+              <ul class="blog-metainfo list-style">
+                <li>
+                  <i class="ri-user-3-line"></i
+                  ><a href="posts-by-date.html">By Admin</a>
+                </li>
+                <li><i class="ri-chat-3-line"></i>No Comment</li>
+              </ul>
+              <h3>
+                <a href="blog-details-left-sidebar.html"
+                  >Identifying And Treating Pain From Nerve Tension</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xl-4 col-lg-6 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="300"
+        >
+          <div class="blog-card-two">
+            <div class="blog-card-img">
+              <img src="{% static 'img/blog/blog-2.webp' %}" alt="Image" />
+              <a href="posts-by-date.html" class="blog-date"
+                ><span>22</span>Mar</a
+              >
+            </div>
+            <div class="blog-card-info">
+              <ul class="blog-metainfo list-style">
+                <li>
+                  <i class="ri-user-3-line"></i
+                  ><a href="posts-by-date.html">By Admin</a>
+                </li>
+                <li><i class="ri-chat-3-line"></i>3 Comments</li>
+              </ul>
+              <h3>
+                <a href="blog-details-left-sidebar.html"
+                  >Therapy Found Effective For Carpal Syndrome</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xl-4 col-lg-6 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="400"
+        >
+          <div class="blog-card-two">
+            <div class="blog-card-img">
+              <img src="{% static 'img/blog/blog-3.webp' %}" alt="Image" />
+              <a href="posts-by-date.html" class="blog-date"
+                ><span>10</span>Mar</a
+              >
+            </div>
+            <div class="blog-card-info">
+              <ul class="blog-metainfo list-style">
+                <li>
+                  <i class="ri-user-3-line"></i
+                  ><a href="posts-by-date.html">By Admin</a>
+                </li>
+                <li><i class="ri-chat-3-line"></i>1 Comment</li>
+              </ul>
+              <h3>
+                <a href="blog-details-left-sidebar.html"
+                  >Remove Back Pain While Working On A Computer</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center d-md-none">
+        <a href="blog-left-sidebar.html" class="btn-one">View All Blog Post</a>
+      </div>
+    </div>
+
+    <div class="bg_ash ptb-100" id="target">
+      <div class="container">
+        <h4 class="text-center mb-35">Trusted By International Company</h4>
+        <div class="partner-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-1.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-2.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-3.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-4.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-5.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-6.webp' %}"
+                alt="Image"
+              />
+            </div>
+            <div class="swiper-slide partner-logo">
+              <img
+                src="{% static 'img/partner/partner-7.webp' %}"
+                alt="Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'imports/footer.html' %}
+
+
+    <button
+      type="button"
+      id="backtotop"
+      class="position-fixed text-center border-0 p-0"
+    >
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <div
+      class="modal fade"
+      id="quickview-modal"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="quickview-modal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn_close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="ri-close-line"></i>
+          </button>
+          <div class="modal-body">
+            <div class="video-popup">
+              <iframe
+                width="885"
+                height="498"
+                src="https://www.youtube.com/embed/3FjT7etqxt8"
+                title="How to Design an Elvis Movie Poster in Photoshop"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="https://templates.hibootstrap.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/swiper.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from templates.hibootstrap.com/zigo/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 18:05:16 GMT -->
+</html>

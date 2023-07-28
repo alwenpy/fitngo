@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/remixicon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon_zigo.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper.bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/dark-theme.css' %}" />
+    <title>Fit n GO - Physio</title>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.webp' %}" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="switch-theme-mode">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    {% include "imports/header.html" %}
+
+    <div class="breadcrumb-wrap">
+      <img
+        src="{% static 'img/br-shape-1.webp' %}"
+        alt="Image"
+        class="br-shape-one moveHorizontal"
+      />
+      <img
+        src="{% static 'img/br-shape-2.webp' %}"
+        alt="Image"
+        class="br-shape-two animationFramesTwo"
+      />
+      <div class="container">
+        <div class="breadcrumb-content">
+          <h2>Blog Details</h2>
+          <ul class="breadcrumb-menu list-style">
+            <li><a href="index-2.html">Home</a></li>
+            <li>Blog Details</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <div class="row g-3 justify-content-center">
+          {% for post in post %}
+        <div class="col-12 card-col col-md-3">
+          <div class="card overflow-hidden">
+            <img
+              class="card-img-top"
+              src="{{ post.image.url }}"
+              alt="Card image cap"
+              style="object-fit:cover;
+              height: 200px;
+              "   
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.summary }}...</p>
+                <a href="{% url 'single_blog' post.id %}" class="btn-two" style=>Read More</a>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Last updated {{ post.pub_date|timesince }} ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+          {% endfor %}
+        
+      <ul class="page-nav list-style">
+        <li>
+          <a href="blog-left-sidebar.html"
+            ><img
+              src="{% static 'img/icons/left-arrow-2.svg' %}"
+              alt="Image"
+          /></a>
+        </li>
+        <li><a class="active" href="blog-left-sidebar.html">01</a></li>
+        <li><a href="blog-left-sidebar.html">02</a></li>
+        <li><a href="blog-left-sidebar.html">03</a></li>
+        <li>
+          <a href="blog-left-sidebar.html"
+            ><img
+              src="{% static 'img/icons/right-arrow-2.svg' %}"
+              alt="Image"
+          /></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    {% include "imports/footer.html" %}
+
+    <button
+      type="button"
+      id="backtotop"
+      class="position-fixed text-center border-0 p-0"
+    >
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script
+      data-cfasync="false"
+      src="https://templates.hibootstrap.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/swiper.bundle.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
