@@ -912,7 +912,7 @@ select {
   filter: brightness(0) invert(1);
 }
 .breadcrumb-wrap {
-  padding: 210px 0 110px;
+  padding: 145px 0 41px;
   position: relative;
   z-index: 1;
   overflow: hidden;
