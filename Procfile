@@ -1,0 +1,1 @@
+web: gunicorn fitngo.wsgi --log-file -
