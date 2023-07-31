@@ -434,7 +434,7 @@ select {
   z-index: 1;
   border: none;
   line-height: 1;
-  padding: 18px 27px 16px;
+  padding: 14px 27px 16px;
   border-radius: 50px;
   overflow: hidden;
   top: 3px;
@@ -5987,4 +5987,42 @@ article .blog-title h6 {
 .card-img-top:hover {
   filter: opacity(1);
   transform: scale(1.1) ;
+}
+/* calendly */
+
+.container .ptb-100 {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #430660;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calendly-inline-widget button {
+  background-color: #430660;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.calendly-inline-widget button:hover {
+  background-color: #541e7e;
 }

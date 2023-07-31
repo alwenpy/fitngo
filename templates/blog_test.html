@@ -5,14 +5,5 @@
     <title>Your Blog Page</title>
 </head>
 <body>
-{% for post in post %}
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.body }}</p>
-            {% comment %} <p>{{ post.created_at }}</p> {% endcomment %}
-    <p>{{ post.pub_date_pretty }}</p>
-    <img src= "{{ post.image.url }}" alt="image">
-    <p>{{ post.tags }}</p>
-    <p>{{ post.summary }}</p>
-    {% endfor %}
 </body>
 </html>

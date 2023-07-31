@@ -4,7 +4,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
-    path('<int:id>/', views.SingleBlogView.as_view(), name='single_blog')
+    path('<int:id>/', views.SingleBlogView.as_view(), name='single_blog'),
+    path('test/', views.test, name='test'),
 ]
 
 if settings.DEBUG:

@@ -21,3 +21,8 @@ class SingleBlogView(View):
             'post': post,
         }
         return render(request, 'single_blog.html', context)
+    
+    
+
+def test(request):
+    return render(request,'blog_test.html')
