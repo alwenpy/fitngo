@@ -53,10 +53,12 @@
             <li>Blog Details</li>
           </ul>
         </div>
-      </div>
+      </div>k
     </div>
-        <div class="row g-3 justify-content-center">
-          {% for post in post %}
+        <div class="row g-3 justify-content-center" style="
+        padding: 78px;
+        min-height">
+          {% for post in posts %}
         <div class="col-12 card-col col-md-3">
           <div class="card overflow-hidden">
             <img
@@ -83,21 +85,29 @@
         
       <ul class="page-nav list-style">
         <li>
-          <a href="blog-left-sidebar.html"
+          {% if posts.has_previous %}
+          <a href="?page={{ posts.previous_page_number }}"
+
             ><img
               src="{% static 'img/icons/left-arrow-2.svg' %}"
               alt="Image"
           /></a>
+          {% endif %}
         </li>
-        <li><a class="active" href="blog-left-sidebar.html">01</a></li>
-        <li><a href="blog-left-sidebar.html">02</a></li>
-        <li><a href="blog-left-sidebar.html">03</a></li>
-        <li>
-          <a href="blog-left-sidebar.html"
+        <li>{% for page_num in posts.paginator.page_range %}
+          <a href="?page={{ page_num }}" {% if page_num == posts.number %}class="active"{% endif %}>{{ page_num }}</a>
+        {% endfor %}
+    </li>
+        <li>    
+          {% if posts.has_next %}
+
+          <a href="?page={{ posts.next_page_number }}"
             ><img
               src="{% static 'img/icons/right-arrow-2.svg' %}"
               alt="Image"
           /></a>
+          {% endif %}
+
         </li>
       </ul>
       </div>
@@ -112,13 +122,6 @@
       <i class="ri-arrow-up-line"></i>
     </button>
 
-    <script
-      data-cfasync="false"
-      src="https://templates.hibootstrap.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/swiper.bundle.min.js' %}"></script>
-    <script src="{% static 'js/aos.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    {% include 'imports/scripts.html' %}
   </body>
 </html>

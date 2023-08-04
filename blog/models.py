@@ -13,15 +13,13 @@ class Catagory(models.Model):
 
     def __str__(self):
         return str(self.name) 
-
-# tags model
+    
 class Tag(models.Model):
-
-    name  = models.CharField(max_length=100, null=True)
+    name = models.CharField(max_length=100, null=True)
 
     def __str__(self):
-        return self.name 
-
+        return self.name if self.name else "Unnamed Tag"
+    
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     pub_date = models.DateTimeField()

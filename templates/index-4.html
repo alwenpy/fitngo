@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
-  <!-- Mirrored from templates.hibootstrap.com/zigo/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 18:04:53 GMT -->
   <head>
   {% include 'imports/metatags.html' %}
 
@@ -729,100 +728,43 @@
           </div>
         </div>
         <div class="col-xxl-7 col-xl-6 col-lg-5 col-md-4 text-md-end sm-none">
-          <a href="blog-left-sidebar.html" class="btn-one"
+          <a href="/blog" class="btn-one"
             >View All Blog Post</a
           >
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div
-          class="col-xl-4 col-lg-6 col-md-6"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="200"
-        >
+      
+       <div class="row justify-content-center " data-aos="fade-up"
+       data-aos-duration="1200"
+       data-aos-delay="200">  
+        {% for post in posts %}
+        <div class="col-xl-4 col-lg-6 col-md-6">
           <div class="blog-card-two">
             <div class="blog-card-img">
-              <img src="{% static 'img/blog/blog-1.webp' %}" alt="Image" />
-              <a href="posts-by-date.html" class="blog-date"
-                ><span>25</span>Mar</a
-              >
-            </div>
-            <div class="blog-card-info">
-              <ul class="blog-metainfo list-style">
-                <li>
-                  <i class="ri-user-3-line"></i
-                  ><a href="posts-by-date.html">By Admin</a>
-                </li>
-                <li><i class="ri-chat-3-line"></i>No Comment</li>
-              </ul>
-              <h3>
-                <a href="blog-details-left-sidebar.html"
-                  >Identifying And Treating Pain From Nerve Tension</a
+              <img src="{{ post.image.url }}" alt="Image" style="height: 200px; object-fit: cover; width: 100%;"/>
+              <a href="{% url 'single_blog' post.id %}" class="blog-date"
+                ><span>{{post.pub_date.date}}</span></a
                 >
-              </h3>
+              </div>
+              <div class="blog-card-info">
+                <ul class="blog-metainfo list-style">
+                  <li>
+                    <i class="ri-user-3-line"></i
+                      >By Admin
+                    </li>
+                    <li><i class="ri-chat-3-line"></i>                   
+                      <a href="{% url 'single_blog' post.id %}#disqus_thread"></a></li>
+                    </ul>
+                  <h3>
+                    <a href="{% url 'single_blog' post.id %}"
+                    >{{post.title}}</a
+                    >
+                  </h3>
+                </div>
+              </div>
             </div>
+            {% endfor %}
           </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="300"
-        >
-          <div class="blog-card-two">
-            <div class="blog-card-img">
-              <img src="{% static 'img/blog/blog-2.webp' %}" alt="Image" />
-              <a href="posts-by-date.html" class="blog-date"
-                ><span>22</span>Mar</a
-              >
-            </div>
-            <div class="blog-card-info">
-              <ul class="blog-metainfo list-style">
-                <li>
-                  <i class="ri-user-3-line"></i
-                  ><a href="posts-by-date.html">By Admin</a>
-                </li>
-                <li><i class="ri-chat-3-line"></i>3 Comments</li>
-              </ul>
-              <h3>
-                <a href="blog-details-left-sidebar.html"
-                  >Therapy Found Effective For Carpal Syndrome</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-4 col-lg-6 col-md-6"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="400"
-        >
-          <div class="blog-card-two">
-            <div class="blog-card-img">
-              <img src="{% static 'img/blog/blog-3.webp' %}" alt="Image" />
-              <a href="posts-by-date.html" class="blog-date"
-                ><span>10</span>Mar</a
-              >
-            </div>
-            <div class="blog-card-info">
-              <ul class="blog-metainfo list-style">
-                <li>
-                  <i class="ri-user-3-line"></i
-                  ><a href="posts-by-date.html">By Admin</a>
-                </li>
-                <li><i class="ri-chat-3-line"></i>1 Comment</li>
-              </ul>
-              <h3>
-                <a href="blog-details-left-sidebar.html"
-                  >Remove Back Pain While Working On A Computer</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="text-center d-md-none">
         <a href="blog-left-sidebar.html" class="btn-one">View All Blog Post</a>
       </div>
@@ -928,15 +870,7 @@
       </div>
     </div>
 
-    <script
-      data-cfasync="false"
-      src="https://templates.hibootstrap.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/aos.js' %}"></script>
-    <script src="{% static 'js/swiper.bundle.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    {% include 'imports/scripts.html' %}
   </body>
 
-  <!-- Mirrored from templates.hibootstrap.com/zigo/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 18:05:16 GMT -->
 </html>

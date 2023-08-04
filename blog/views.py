@@ -2,13 +2,17 @@ from django.shortcuts import render
 from django.views.generic import View
 from .models import Blog
 from django.shortcuts import get_object_or_404
+from django.core.paginator import Paginator
 
 
 class HomeView(View):
     def get(self, request, *args, **kwargs):
-        post = Blog.objects.all().order_by('catagories', '-created_at')
+        posts = Blog.objects.all().order_by('catagories', '-created_at')
+        paginator = Paginator(posts, 1)  # Pass the queryset 'posts' to Paginator
+        page_number = request.GET.get('page')
+        data = paginator.get_page(page_number)
         context = {
-            'post': post,
+            'posts': data,  # Change 'post' to 'posts' to use the paginated data
         }
         return render(request, 'blog.html', context)
     
@@ -25,4 +29,6 @@ class SingleBlogView(View):
     
 
 def test(request):
-    return render(request,'blog_test.html')
+    post=Blog.objects.all()     
+    context = { 'post': post, }
+    return render(request,'blog_test.html',context)

@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from blog.models import *
 
-# Create your views here.
 
 def index(request):
-    return render(request,'index-4.html')
+    posts=Blog.objects.all()
+    context={"posts":posts}
+    return render(request,'index-4.html',context)
 
 def appointment(request):
     return render(request,'appointment.html')
