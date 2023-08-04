@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'home',
     'blog',
+    'django.contrib.sitemaps'
 
 
 ]

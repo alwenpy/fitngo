@@ -12,7 +12,7 @@ class HomeView(View):
         page_number = request.GET.get('page')
         data = paginator.get_page(page_number)
         context = {
-            'posts': data,  # Change 'post' to 'posts' to use the paginated data
+            'posts': data, 
         }
         return render(request, 'blog.html', context)
     
