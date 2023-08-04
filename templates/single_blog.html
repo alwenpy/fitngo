@@ -71,10 +71,16 @@
               </div>
               <ul class="blog-metainfo list-style">
                 <li>
-                  <i class="ri-user-3-line"></i
-                    <p>{{post.tags}}</p>
-                  </li>
-                <li><i class="ri-chat-3-line"></i>{{post.comment.count}} comments </li>
+                  <div>
+                    {% for tag in post.tags.all %}
+                      {{ tag.name }}
+                    {% endfor %}
+                  </div>
+                </li>
+                
+                
+                  <li><i class="ri-chat-3-line"></i>                   
+                    <a href="{% url 'single_blog' post.id %}#disqus_thread"></a></li>
               </ul>
               <div class="blog-title" >
                 <h2>Published Date-{{post.pub_date}}</h2>
@@ -92,7 +98,10 @@
                   <div class="post-tag">
                     <span>Tags</span>
                     <ul class="tag-list-two list-style">
-                      <li>{{post.tags}}</li>
+                      <li><p>{% for tag in post.tags.all %}
+                        {{ tag.name }}
+                    {% endfor %}
+                    </p></li>
                     </ul>
                   </div>
                 </div>

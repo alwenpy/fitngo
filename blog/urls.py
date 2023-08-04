@@ -2,11 +2,7 @@ from django.urls import path, include
 from . import views
 from django.conf import settings
 from django.contrib.sitemaps.views import sitemap   
-from .sitemaps import BlogSitemap
-
-sitemaps={
-    "blogs":BlogSitemap
-}
+from .sitemaps import sitemaps
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),

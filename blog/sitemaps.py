@@ -1,17 +1,10 @@
-from django.contrib.sitemaps import Sitemap
+from django.contrib.sitemaps import GenericSitemap
 from .models import Blog
-from django.urls import reverse
 
-
-class BlogSitemap(Sitemap):
-    changefreq="weekly"
-    priority=0.9
-    
-    def items(self):
-        return Blog.objects.all()
-
-    def lastmod(self, obj):
-        return obj.created_at
-
-    def location(self, obj):
-        return reverse('single_blog', args=[obj.id])
+blog_info_dict = {
+    'queryset': Blog.objects.all(),
+    'date_field': 'created_at',
+}
+sitemaps = {
+    'blog': GenericSitemap(blog_info_dict),
+}
