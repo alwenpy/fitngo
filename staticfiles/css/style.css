@@ -852,7 +852,7 @@ select {
 }
 .page-nav li {
   margin: 0 4px;
-  display: inline-block;
+  display: inline-flex;
 }
 .page-nav li:first-child {
   position: relative;

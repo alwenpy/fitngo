@@ -24,7 +24,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=255)
     pub_date = models.DateTimeField()
     body = models.TextField()
-    image = models.ImageField(upload_to='blog/images', null=True, blank=True)
+    image = models.ImageField(upload_to='blog/images', null=True, blank=True,)
     catagories = models.ForeignKey(Catagory,on_delete=models.DO_NOTHING, null=True)
     tags = models.ManyToManyField(Tag, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
