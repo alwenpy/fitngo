@@ -524,123 +524,44 @@
       <div class="container ptb-100">
         <div class="testimonial-slider-two swiper">
           <div class="swiper-wrapper">
+            
+            {% for test in testimonials %}
             <div class="swiper-slide">
               <div class="testimonial-card-three">
                 <img
                   src="{% static 'img/optimized/quote-icon-5.svg' %}"
                   alt="Image"
-                  class="quote-icon"
-                />
+                  class="quote-icon"/>
                 <div class="row align-items-center gx-5">
                   <div class="col-xl-3 col-lg-4 col-md-4">
                     <div class="client-img">
                       <img
-                        src="{% static 'img/optimized/client-10.webp' %}"
+                        src="{{ test.image.url }}"
                         alt="Image"
-                      />
+                      style="height: 200px; width: 200px;"/>
                     </div>
                   </div>
                   <div class="col-xl-9 col-lg-8 col-md-8">
                     <ul class="rating list-style">
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                    </ul>
+                     
+                      {% for i in test.rating %}
+                      <i class="ri-star-fill"></i>
+                  {% endfor %}
+                     </ul>
                     <p class="client-quote">
-                      “If you are going to use a passage of Lorem Ipsum, you
-                      need to be sure there isn't anything embarrassing hidden
-                      in the middle of text. All the Lorem Ipsum generators on
-                      the Internet tend to repeat predefinedhe first Internet.
-                      It uses a dictionary of over 200 Latin words,
+                      {{test.content}}
                     </p>
                     <div class="client-info">
-                      <h5>Sheldon Hinton</h5>
-                      <span>Developer</span>
+                      <h5>{{test.name}}</h5>
+                      <span>{{test.occupation}}</span>
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="testimonial-card-three">
-                <img
-                  src="{% static 'img/optimized/quote-icon-5.svg' %}"
-                  alt="Image"
-                  class="quote-icon"
-                />
-                <div class="row align-items-center gx-5">
-                  <div class="col-xl-3 col-lg-4 col-md-4">
-                    <div class="client-img">
-                      <img
-                        src="{% static 'img/optimized/client-11.webp' %}"
-                        alt="Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-8 col-md-8">
-                    <ul class="rating list-style">
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                    </ul>
-                    <p class="client-quote">
-                      “If you are going to use a passage of Lorem Ipsum, you
-                      need to be sure there isn't anything embarrassing hidden
-                      in the middle of text. All the Lorem Ipsum generators on
-                      the Internet tend to repeat predefinedhe first Internet.
-                      It uses a dictionary of over 200 Latin words,
-                    </p>
-                    <div class="client-info">
-                      <h5>Mark Towen</h5>
-                      <span>Entrepreneur</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-card-three">
-                <img
-                  src="{% static 'img/optimized/quote-icon-5.svg' %}"
-                  alt="Image"
-                  class="quote-icon"
-                />
-                <div class="row align-items-center gx-5">
-                  <div class="col-xl-3 col-lg-4 col-md-4">
-                    <div class="client-img">
-                      <img
-                        src="{% static 'img/optimized/client-12.webp' %}"
-                        alt="Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-8 col-md-8">
-                    <ul class="rating list-style">
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                      <li><i class="ri-star-fill"></i></li>
-                    </ul>
-                    <p class="client-quote">
-                      “If you are going to use a passage of Lorem Ipsum, you
-                      need to be sure there isn't anything embarrassing hidden
-                      in the middle of text. All the Lorem Ipsum generators on
-                      the Internet tend to repeat predefinedhe first Internet.
-                      It uses a dictionary of over 200 Latin words,
-                    </p>
-                    <div class="client-info">
-                      <h5>Steve Austin</h5>
-                      <span>Doctor</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
+           
           </div>
         </div>
       </div>
